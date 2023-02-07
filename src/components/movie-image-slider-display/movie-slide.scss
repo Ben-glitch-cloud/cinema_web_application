@@ -1,0 +1,23 @@
+.image-slider{
+    width: 94%; 
+    margin: 0px 3%;
+    display: flex;
+    flex-direction: row; 
+    margin-top: 10px;
+    row-gap: 10px;
+    justify-content: space-evenly; 
+
+    .single-image{
+
+        width: calc(90% / 3);  
+
+        img{
+            width: 100%;
+            object-fit: contain;
+            height: 580px;
+        }
+      
+    }
+
+    
+}

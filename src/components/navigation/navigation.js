@@ -3,8 +3,13 @@ import CompanyLogo from '../../images/vintage-logo.png'
 
 function navigation(){
     return(
-        <nav>
-            <img src={CompanyLogo}></img>
+        <nav> 
+            <div className='logo-name'>
+                <img src={CompanyLogo}></img> 
+                <div className='name-folder'>
+                    <p id='message'></p>
+                </div>
+            </div>
             <ul>
                 <li> 
                     <a href="/about" >About</a>  

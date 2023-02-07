@@ -6,12 +6,62 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center; 
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; 
 
-    img{
-        width: 70px; 
-       margin-left: 30px;
+    .logo-name{
+
+        display: flex; 
+        align-items: center;
+        direction: row; 
+
+        .name-folder{  
+
+            width: 100%;
+
+            #message::before{ 
+                font-family: 'Raleway';  
+                width: 100%;
+                content: "Welcome to Vintage Cinema";
+                display: block;
+                font-size: 20px; 
+                margin-left: 10px;
+                font-weight: 500;
+                color: #456188; 
+                overflow: hidden;
+                white-space: nowrap;
+                animation-delay: 4s;
+                animation: textShow 3s linear forwards;
+                animation-delay: 4s;
+            }  
+
+            @keyframes textShow {
+                0%{
+                    content: "Welcome to Vintage Cinema";
+                    width: 100%;
+                }
+                50%{
+                    content: "Welcome to Vintage Cinema";
+                    width: 0%;
+                }
+                51%{
+                    content: "";
+                    width: 0%;
+                }
+                100%{
+                    content: "VC";
+                    width: 100%;
+                }
+            }
+
+        }
+        
+        img{
+            width: 70px; 
+           margin-left: 30px;
+        }
     }
+
+    
     
     ul{
         margin-right: 40px;
